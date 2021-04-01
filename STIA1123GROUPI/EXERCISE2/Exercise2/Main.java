@@ -4,33 +4,31 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		ClassBird a = new ClassBird();
+		ClassAnimal Eagle = new ClassAnimal();
 		
 		System.out.println("*** Bird States***");
-		System.out.println(a.type);
-		System.out.println(a.colour);
-		System.out.println(a.size);
-		
-		System.out.println("+++ Bird Behavior+++");
-		a.printFly();
-		a.printEat();
-		a.printSleep();
-		a.printLayEggs();
+		System.out.println("Animal: Bird" + "\nType: " + Eagle.type[0] + "\nColour: " + Eagle.colour[0] + "\nSize: " + Eagle.size[0]);
 		System.out.println();
 		
-		ClassCat c = new ClassCat();
+		System.out.println("+++ Bird Behavior+++");
+		Eagle.printFly();
+		Eagle.printEat();
+		Eagle.printSleep();
+		Eagle.printLayEgg();
+		System.out.println();
+		
+		ClassAnimal Persian = new ClassAnimal();
 		
 		System.out.println("***Cat States***");
-		System.out.println(c.breed);
-		System.out.println(c.colour);
-		System.out.println(c.size);
+		System.out.println("Animal: Cat" + "\nBreed: " + Persian.breed[1] + "\nColour: " + Persian.colour[3] + "\nSize: " + Persian.size[1]);
+		System.out.println();
 		
 		System.out.println("+++Cat Behavior+++");
-		c.printEat();
-		c.printJump();
-		c.printRun();
-		c.printScratch();
-		c.printSleep();
+		Persian.printEat();
+		Persian.printJump();
+		Persian.printRun();
+		Persian.printScratch();
+		Persian.printSleep();
 		
 	}
 
